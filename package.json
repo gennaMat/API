@@ -2,12 +2,13 @@
   "name": "api",
   "version": "0.0.0",
   "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "ng": "ng",
     "build": "ng build",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "e2e": "ng e2e"
+    
   },
   
  
