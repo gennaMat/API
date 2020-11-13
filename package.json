@@ -3,17 +3,24 @@
   "version": "0.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": " index.js",
+    "start": " node server.js",
     "ng": "ng",
     "build": "ng build",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --output-path angularapp  --aot --prod"
+  },
+  "engines": {
+    "node": "v14.15.0",
+    "npm": "6.14.8"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.2.0",
+    "@angular/cli": "^11.0.1",
     "@angular/common": "~10.2.0",
     "@angular/compiler": "~10.2.0",
+    "@angular/compiler-cli": "^10.2.3",
     "@angular/core": "~10.2.0",
     "@angular/forms": "~10.2.0",
     "@angular/platform-browser": "~10.2.0",
@@ -24,17 +31,19 @@
     "express": "^4.17.1",
     "mongoose": "^5.10.13",
     "morgan": "^1.10.0",
+    "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "typescript": "~4.0.2",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1002.0",
-    "@angular/cli": "~10.2.0",
-    "@angular/compiler-cli": "~10.2.0",
-    "@types/node": "^12.11.1",
+    "@angular/cli": "^11.0.1",
+    "@angular/compiler-cli": "^10.2.3",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
@@ -65,8 +74,5 @@
   "bugs": {
     "url": "https://github.com/gennaMat/API/issues"
   },
-  "homepage": "https://github.com/gennaMat/API#readme",
-  "engines": {
-    "node": "14.15.0"
-  }
+  "homepage": "https://github.com/gennaMat/API#readme"
 }
