@@ -3,7 +3,7 @@ const app = express();
 const importData =require("app.js");
 
 
-let port = process.env.PORT || 4200;
+let port = process.env.PORT || 3000;
 
 
 app.get("/", (req, res)=>{
