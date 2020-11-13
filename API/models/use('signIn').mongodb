@@ -1,3 +1,0 @@
-use('signIn')
-
-db.INfo.insert({'username': 'Genevieve', 'password': '29962552'})

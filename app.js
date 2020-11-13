@@ -8,7 +8,7 @@ require('dotenv').config();
 const userRoute = require('./api/routes/user');
 const userFileRoute = require('./api/routes/userFile');
 
-mongoose.connect('mongodb+srv://admin:' + process.env.DB_PASSWORD + '@node-rest-api.iszlv.mongodb.net/' + process.env.DB_NAME +'?retryWrites=true&w=majority',{
+mongoose.connect(process.env.DB_URI,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
